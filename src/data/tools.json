@@ -1,0 +1,290 @@
+[
+  {
+    "name": "Kimi K2 (Moonshot)",
+    "logo": "https://logo.clearbit.com/moonshot.cn",
+    "category": "Agentes",
+    "url": "https://kimi.ai/",
+    "description": "IA agéntica con ventana de contexto masiva.",
+    "pricing": "Gratis"
+  },
+  {
+    "name": "Minimax Agent",
+    "logo": "https://logo.clearbit.com/minimax.io",
+    "category": "Agentes",
+    "url": "https://agent.minimax.io/",
+    "description": "Investigación de mercados y documentos de negocio.",
+    "pricing": "Freemium"
+  },
+  {
+    "name": "Manus AI",
+    "logo": "https://logo.clearbit.com/manus.im",
+    "category": "Agentes",
+    "url": "https://manus.im/",
+    "description": "Agente autónomo que controla el navegador.",
+    "pricing": "Créditos"
+  },
+  {
+    "name": "ChatGPT",
+    "logo": "https://logo.clearbit.com/openai.com",
+    "category": "LLM",
+    "url": "https://chatgpt.com/",
+    "description": "El estándar. GPT-4o, Canvas y Voz.",
+    "pricing": "Freemium"
+  },
+  {
+    "name": "Claude",
+    "logo": "https://logo.clearbit.com/anthropic.com",
+    "category": "LLM",
+    "url": "https://claude.ai/",
+    "description": "Programación y redacción natural. Artifacts.",
+    "pricing": "Freemium"
+  },
+  {
+    "name": "Microsoft Copilot",
+    "logo": "https://logo.clearbit.com/microsoft.com",
+    "category": "LLM",
+    "url": "https://copilot.microsoft.com/",
+    "description": "GPT-4 integrado en Windows/Edge.",
+    "pricing": "Freemium"
+  },
+  {
+    "name": "DeepSeek",
+    "logo": "https://logo.clearbit.com/deepseek.com",
+    "category": "LLM",
+    "url": "https://chat.deepseek.com/",
+    "description": "Open source, razonamiento R1 y OCR.",
+    "pricing": "Gratis"
+  },
+  {
+    "name": "Chat Z (GLM)",
+    "logo": "https://logo.clearbit.com/zhipuai.cn",
+    "category": "LLM",
+    "url": "https://chat.z.ai/",
+    "description": "Full Stack App Generation.",
+    "pricing": "Gratis"
+  },
+  {
+    "name": "Qwen",
+    "logo": "https://logo.clearbit.com/aliyun.com",
+    "category": "LLM",
+    "url": "https://qwen.ai/",
+    "description": "Ecosistema masivo y Deep Research.",
+    "pricing": "Gratis"
+  },
+  {
+    "name": "Gemini",
+    "logo": "https://logo.clearbit.com/google.com",
+    "category": "LLM",
+    "url": "https://gemini.google.com/",
+    "description": "Integración nativa Google Workspace.",
+    "pricing": "Freemium"
+  },
+  {
+    "name": "Grok",
+    "logo": "https://logo.clearbit.com/x.ai",
+    "category": "LLM",
+    "url": "https://x.ai/",
+    "description": "IA de Elon Musk con datos de X en tiempo real.",
+    "pricing": "Pago"
+  },
+  {
+    "name": "Meta AI",
+    "logo": "https://logo.clearbit.com/meta.com",
+    "category": "LLM",
+    "url": "https://www.meta.ai/",
+    "description": "Llama 3 en WhatsApp/Instagram.",
+    "pricing": "Gratis"
+  },
+  {
+    "name": "NotebookLM",
+    "logo": "https://logo.clearbit.com/notebooklm.google.com",
+    "category": "Investigación",
+    "url": "https://notebooklm.google.com/",
+    "description": "Podcasts de audio a partir de tus documentos.",
+    "pricing": "Gratis"
+  },
+  {
+    "name": "Perplexity",
+    "logo": "https://logo.clearbit.com/perplexity.ai",
+    "category": "Investigación",
+    "url": "https://www.perplexity.ai/",
+    "description": "Motor de respuesta con citas reales.",
+    "pricing": "Freemium"
+  },
+  {
+    "name": "LMSYS Arena",
+    "logo": "https://logo.clearbit.com/lmsys.org",
+    "category": "Investigación",
+    "url": "https://chat.lmsys.org/",
+    "description": "Benchmarking ciego de modelos.",
+    "pricing": "Gratis"
+  },
+  {
+    "name": "Google AI Studio",
+    "logo": "https://logo.clearbit.com/gstatic.com",
+    "category": "Dev",
+    "url": "https://aistudio.google.com/",
+    "description": "Contexto de 2M tokens para devs.",
+    "pricing": "Gratis"
+  },
+  {
+    "name": "Cursor",
+    "logo": "https://logo.clearbit.com/cursor.com",
+    "category": "Dev",
+    "url": "https://www.cursor.com/",
+    "description": "Editor de código con IA nativa.",
+    "pricing": "Freemium"
+  },
+  {
+    "name": "Clerk",
+    "logo": "https://logo.clearbit.com/clerk.com",
+    "category": "Dev",
+    "url": "https://clerk.com/",
+    "description": "Auth y gestión de usuarios.",
+    "pricing": "Freemium"
+  },
+  {
+    "name": "Pinokio",
+    "logo": "https://logo.clearbit.com/pinokio.computer",
+    "category": "Dev",
+    "url": "https://pinokio.co/",
+    "description": "Instalador local de IAs.",
+    "pricing": "Open Source"
+  },
+  {
+    "name": "Hostinger AI",
+    "logo": "https://logo.clearbit.com/hostinger.com",
+    "category": "Dev",
+    "url": "https://hostinger.com/",
+    "description": "Constructor web automático.",
+    "pricing": "Pago"
+  },
+  {
+    "name": "Sora 2",
+    "logo": "https://logo.clearbit.com/openai.com",
+    "category": "Video",
+    "url": "https://openai.com/sora",
+    "description": "Simulación física y vídeo realista.",
+    "pricing": "Pago"
+  },
+  {
+    "name": "Runway",
+    "logo": "https://logo.clearbit.com/runwayml.com",
+    "category": "Video",
+    "url": "https://runwayml.com/",
+    "description": "Gen-3 Alpha y control profesional.",
+    "pricing": "Freemium"
+  },
+  {
+    "name": "Kling AI",
+    "logo": "https://logo.clearbit.com/klingai.com",
+    "category": "Video",
+    "url": "https://klingai.com/",
+    "description": "Edición granular O1.",
+    "pricing": "Créditos"
+  },
+  {
+    "name": "Wan",
+    "logo": "https://logo.clearbit.com/wan.video",
+    "category": "Video",
+    "url": "https://wan.video/",
+    "description": "Video desde audio y avatares.",
+    "pricing": "Freemium"
+  },
+  {
+    "name": "CapCut AI",
+    "logo": "https://logo.clearbit.com/capcut.com",
+    "category": "Video",
+    "url": "https://www.capcut.com/",
+    "description": "Script to Video editor.",
+    "pricing": "Gratis"
+  },
+  {
+    "name": "Vheer",
+    "logo": "https://logo.clearbit.com/vheer.com",
+    "category": "Video",
+    "url": "https://vheer.com/",
+    "description": "Image to Video simple.",
+    "pricing": "Gratis"
+  },
+  {
+    "name": "Midjourney",
+    "logo": "https://logo.clearbit.com/midjourney.com",
+    "category": "Imágenes",
+    "url": "https://www.midjourney.com/",
+    "description": "Calidad artística superior.",
+    "pricing": "Pago"
+  },
+  {
+    "name": "Ideogram",
+    "logo": "https://logo.clearbit.com/ideogram.ai",
+    "category": "Imágenes",
+    "url": "https://ideogram.ai/",
+    "description": "Texto perfecto en imágenes.",
+    "pricing": "Freemium"
+  },
+  {
+    "name": "Stable Diffusion",
+    "logo": "https://logo.clearbit.com/stability.ai",
+    "category": "Imágenes",
+    "url": "https://stability.ai/",
+    "description": "Open source y control total.",
+    "pricing": "Gratis/Pago"
+  },
+  {
+    "name": "Perchance",
+    "logo": "https://logo.clearbit.com/perchance.org",
+    "category": "Imágenes",
+    "url": "https://perchance.org/",
+    "description": "Sin censura y sin registro.",
+    "pricing": "Gratis"
+  },
+  {
+    "name": "Hunyuan 3D",
+    "logo": "https://logo.clearbit.com/tencent.com",
+    "category": "3D",
+    "url": "https://3d.hunyuan.tencent.com/",
+    "description": "Generación de modelos 3D.",
+    "pricing": "Gratis"
+  },
+  {
+    "name": "Suno AI",
+    "logo": "https://logo.clearbit.com/suno.com",
+    "category": "Audio",
+    "url": "https://suno.com/",
+    "description": "Canciones completas con IA.",
+    "pricing": "Freemium"
+  },
+  {
+    "name": "ElevenLabs",
+    "logo": "https://logo.clearbit.com/elevenlabs.io",
+    "category": "Audio",
+    "url": "https://elevenlabs.io/",
+    "description": "Voces sintéticas realistas.",
+    "pricing": "Freemium"
+  },
+  {
+    "name": "Minimax Audio",
+    "logo": "https://logo.clearbit.com/minimax.io",
+    "category": "Audio",
+    "url": "https://minimax.io/audio",
+    "description": "Música y voz de alta fidelidad.",
+    "pricing": "Gratis"
+  },
+  {
+    "name": "Avatar Symphony",
+    "logo": "https://logo.clearbit.com/tiktok.com",
+    "category": "Avatares",
+    "url": "https://ads.tiktok.com/",
+    "description": "Avatares para TikTok Ads.",
+    "pricing": "Gratis"
+  },
+  {
+    "name": "Apob AI",
+    "logo": "https://logo.clearbit.com/apob.ai",
+    "category": "Avatares",
+    "url": "https://mega.apob.ai/",
+    "description": "Influencers AI consistentes.",
+    "pricing": "Pago"
+  }
+]
