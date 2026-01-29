@@ -48,7 +48,7 @@ h4,
 /* Sidebar Styling */
 .sidebar {
   width: var(--sidebar-width);
-  height: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   padding: 2rem 1.5rem;
@@ -56,6 +56,15 @@ h4,
   background: var(--bg-glass);
   backdrop-filter: blur(20px);
   z-index: 100;
+  overflow-y: auto;
+  /* Habilitar scroll */
+  scrollbar-width: none;
+  /* Ocultar barra en Firefox */
+}
+
+.sidebar::-webkit-scrollbar {
+  display: none;
+  /* Ocultar barra en Chrome/Safari */
 }
 
 .brand {
@@ -534,31 +543,115 @@ h4,
   border-radius: 10px;
 }
 
+/* Mobile Brand & Menu Toggle (Hidden by default on Desktop) */
+.menu-toggle {
+  display: none;
+}
+
+.mobile-brand-center {
+  display: none;
+}
+
+.sidebar-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+  z-index: 90;
+}
+
 /* Mobile Responsiveness */
 @media (max-width: 1024px) {
   :root {
-    --sidebar-width: 0px;
+    --sidebar-width: 280px;
   }
 
   .sidebar {
-    display: none;
+    position: fixed;
+    left: calc(var(--sidebar-width) * -1);
+    top: 0;
+    height: 100vh;
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    z-index: 100;
   }
 
-  .header,
+  .sidebar.open {
+    transform: translateX(var(--sidebar-width));
+  }
+
+  .main {
+    overflow-x: hidden;
+    width: 100vw;
+  }
+
+  .header {
+    padding: 1rem 1.5rem;
+    display: grid;
+    grid-template-columns: 40px 1fr 40px;
+    /* Layout center balance */
+    align-items: center;
+    gap: 1rem;
+    background: var(--bg-dark);
+  }
+
+  .menu-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    z-index: 51;
+  }
+
+  .mobile-brand-center {
+    display: flex;
+    justify-content: center;
+  }
+
+  .logo-img-header {
+    width: 100px;
+    height: auto;
+    filter: drop-shadow(0 0 10px rgba(0, 242, 255, 0.3));
+  }
+
+  .search-container {
+    grid-column: span 3;
+    max-width: 100%;
+  }
+
   .grid-container {
-    padding: 1.5rem;
+    padding: 1rem;
+  }
+
+  .bento-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
   }
 }
 
 @media (max-width: 768px) {
+  .header {
+    padding: 1rem;
+  }
+
+  .modal-content {
+    width: 95%;
+    padding: 1.5rem;
+    border-radius: 20px;
+  }
+
+  .modal-header h2 {
+    font-size: 1.8rem;
+  }
 
   .pros-cons,
   .stats-grid {
     grid-template-columns: 1fr;
     gap: 1.5rem;
-  }
-
-  .modal-content {
-    padding: 2rem;
   }
 }

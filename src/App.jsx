@@ -50,6 +50,7 @@ function App() {
   const [activeCategory, setActiveCategory] = useState('All');
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedTool, setSelectedTool] = useState(null);
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   const filteredTools = useMemo(() => {
     return toolsData.filter(tool => {
@@ -60,11 +61,16 @@ function App() {
     });
   }, [activeCategory, searchQuery]);
 
+  const toggleSidebar = () => setIsSidebarOpen(!isSidebarOpen);
+
   return (
     <div className="layout">
-      {/* Sidebar */}
-      <aside className="sidebar glass">
-        <div className="brand" onClick={() => window.location.reload()} style={{ cursor: 'pointer' }}>
+      {/* Sidebar Overlay for Mobile */}
+      {isSidebarOpen && <div className="sidebar-overlay" onClick={() => setIsSidebarOpen(false)}></div>}
+
+      {/* Sidebar (Shared Desktop & Mobile) */}
+      <aside className={`sidebar glass ${isSidebarOpen ? 'open' : ''}`}>
+        <div className="brand" onClick={() => { window.location.reload(); setIsSidebarOpen(false); }} style={{ cursor: 'pointer' }}>
           <img src="/logo.png" alt="NexusAI Logo" className="logo-img" />
         </div>
         <nav className="nav">
@@ -72,7 +78,10 @@ function App() {
             <button
               key={cat.id}
               className={`nav-item ${activeCategory === cat.id ? 'active' : ''}`}
-              onClick={() => setActiveCategory(cat.id)}
+              onClick={() => {
+                setActiveCategory(cat.id);
+                setIsSidebarOpen(false);
+              }}
             >
               <span className="nav-icon">{cat.icon}</span>
               <span className="nav-label">{cat.name}</span>
@@ -84,11 +93,19 @@ function App() {
       {/* Main Content */}
       <main className="main">
         <header className="header">
+          <button className="menu-toggle" onClick={toggleSidebar} aria-label="Abrir menú">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+          </button>
+
+          <div className="mobile-brand-center">
+            <img src="/logo.png" alt="NexusAI Logo" className="logo-img-header" />
+          </div>
+
           <div className="search-container glass">
             <Icons.Research />
             <input
               type="text"
-              placeholder="Buscar herramientas, agentes, modelos..."
+              placeholder="Buscar herramientas..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
             />
