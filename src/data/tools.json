@@ -240,6 +240,14 @@
     "pricing": "Gratis"
   },
   {
+    "name": "ComfyUI",
+    "logo": "https://avatars.githubusercontent.com/u/161486749?v=4",
+    "category": "Imágenes",
+    "url": "https://www.comfy.org/",
+    "description": "Interfaz de nodos para workflows avanzados de IA generativa (Imagen, Video, Audio).",
+    "pricing": "Freemium"
+  },
+  {
     "name": "Hunyuan 3D",
     "logo": "https://logo.clearbit.com/tencent.com",
     "category": "3D",
